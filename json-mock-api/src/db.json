@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@abc.com",
+      "gender": "Male",
+      "type": "common"
+    },
+    {
+      "id": 2,
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "janedoe@abc.com",
+      "gender": "Female",
+      "type": "common"
+    },
+    {
+      "id": 3,
+      "first_name": "Alice",
+      "last_name": "Doe",
+      "email": "alicedoe@abc.com",
+      "gender": "Female",
+      "type": "common"
+    },
+    {
+      "id": 4,
+      "first_name": "Bob",
+      "last_name": "Doe",
+      "email": "bobdoe@abc.com",
+      "gender": "Male",
+      "type": "admin"
+    }
+  ]
+}

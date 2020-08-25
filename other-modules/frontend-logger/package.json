@@ -1,0 +1,99 @@
+{
+  "_from": "frontend-logger@^1.0.0",
+  "_id": "frontend-logger@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-8Cp+43BJ+gDfkuZdJ8zzNsCupaw=",
+  "_location": "/frontend-logger",
+  "_phantomChildren": {
+    "diagnostics": "1.1.1",
+    "inherits": "2.0.4",
+    "is-stream": "1.1.0",
+    "logform": "2.2.0",
+    "one-time": "0.0.4",
+    "safe-buffer": "5.2.1",
+    "stack-trace": "0.0.10",
+    "triple-beam": "1.3.0",
+    "util-deprecate": "1.0.2",
+    "winston-transport": "4.4.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "frontend-logger@^1.0.0",
+    "name": "frontend-logger",
+    "escapedName": "frontend-logger",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/@frontend-navigations/commons",
+    "/@meli/node-caches",
+    "/frontend-authentication",
+    "/frontend-config",
+    "/frontend-country_config",
+    "/frontend-i18n",
+    "/frontend-melidata",
+    "/frontend-mocks",
+    "/frontend-mshops-detection",
+    "/frontend-platform_detection",
+    "/frontend-prevent-open-redirect",
+    "/frontend-restclient",
+    "/frontend-script",
+    "/frontend-statsd",
+    "/frontend-style",
+    "/mshops-web-utils",
+    "/nordic-dev/frontend-mocks",
+    "/ragnar",
+    "/seller-central-layout",
+    "/tms-frontend-commons/frontend-analytics",
+    "/tms-frontend-commons/frontend-authentication",
+    "/tms-frontend-commons/frontend-country_config",
+    "/tms-frontend-commons/frontend-i18n",
+    "/tms-frontend-commons/frontend-melidata",
+    "/tms-frontend-commons/frontend-script",
+    "/tms-frontend-commons/frontend-style",
+    "/tms-frontend-commons/nordic",
+    "/tms-frontend-commons/ragnar"
+  ],
+  "_resolved": "http://registry.npm.ml.com/frontend-logger/-/frontend-logger-1.3.0.tgz",
+  "_shasum": "f02a7ee37049fa00df92e65d27ccf336c0aea5ac",
+  "_spec": "frontend-logger@^1.0.0",
+  "_where": "/Users/skassis/Repos/tms-frontend/node_modules/frontend-mocks",
+  "author": {
+    "name": "Front-end Core",
+    "email": "frontendcore@mercadolibre.com"
+  },
+  "browser": {
+    "./index.js": "./lib/browser.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "winston": "3.2.1"
+  },
+  "deprecated": false,
+  "description": "A simple and fast logging module for Node.js applications.",
+  "devDependencies": {
+    "@babel/cli": "7.6.2",
+    "@babel/core": "7.6.2",
+    "@babel/preset-env": "7.6.2",
+    "chai": "4.2.0",
+    "eslint-config-bragi": "1.0.1",
+    "istanbul": "0.4.5",
+    "jsdom": "15.1.1",
+    "mocha": "6.2.0",
+    "test-console": "1.1.0"
+  },
+  "engine": ">=6.7.0",
+  "main": "index.js",
+  "name": "frontend-logger",
+  "scripts": {
+    "build": "mkdir -p lib && babel ./src --out-dir ./lib --ignore src/Logger.js",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- ./test/*.spec.js",
+    "lint": "NODE_ENV=test eslint index.js src/*.js",
+    "posttest": "npm run lint",
+    "prepublishOnly": "npm run build",
+    "test": "NODE_ENV=test _mocha ./test/*.spec.js"
+  },
+  "version": "1.3.0"
+}

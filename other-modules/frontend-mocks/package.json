@@ -1,0 +1,75 @@
+{
+  "_from": "frontend-mocks@1.1.1",
+  "_id": "frontend-mocks@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha1-hJWlRSepobaU5Xepy+jxOd+UtfU=",
+  "_location": "/nordic-dev/frontend-mocks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "frontend-mocks@1.1.1",
+    "name": "frontend-mocks",
+    "escapedName": "frontend-mocks",
+    "rawSpec": "1.1.1",
+    "saveSpec": null,
+    "fetchSpec": "1.1.1"
+  },
+  "_requiredBy": [
+    "/nordic-dev"
+  ],
+  "_resolved": "http://registry.npm.ml.com/frontend-mocks/-/frontend-mocks-1.1.1.tgz",
+  "_shasum": "8495a54527a9a1b694e577a9cbe8f139df94b5f5",
+  "_spec": "frontend-mocks@1.1.1",
+  "_where": "/Users/skassis/Repos/tms-frontend/node_modules/nordic-dev",
+  "author": {
+    "name": "Front-end Core",
+    "email": "frontendcore@mercadolibre.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mercadolibre/frontend-mocks/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "debug": "2.6.1",
+    "frontend-logger": "^1.0.0",
+    "lodash.omit": "^4.0.0",
+    "mkdirp": "0.5.1",
+    "path-to-regexp": "1.7.0",
+    "query-string": "4.3.2",
+    "type-is": "1.6.14"
+  },
+  "deprecated": false,
+  "description": "Simple but flexible mock library that requires zero manual work",
+  "devDependencies": {
+    "axios": "0.15.3",
+    "chai": "3.5.0",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb-base": "11.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "frontend-restclient": "^1.0.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "superagent": "3.4.3",
+    "test-console": "1.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "homepage": "https://github.com/mercadolibre/frontend-mocks#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "frontend-mocks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercadolibre/frontend-mocks.git"
+  },
+  "scripts": {
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- -u bdd test/*.spec.js",
+    "lint": "NODE_ENV=test eslint index.js src/*.js test/*.js",
+    "prepublish": "npm test",
+    "test": "NODE_ENV=test _mocha -u bdd test/*.spec.js"
+  },
+  "version": "1.1.1"
+}
